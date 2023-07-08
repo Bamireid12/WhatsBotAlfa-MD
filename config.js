@@ -10,7 +10,7 @@ const { Sequelize } = require("sequelize");
 if (fs.existsSync("config.env"))
 require("dotenv").config({ path: "./config.env" });
 DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
-let HANDLER = "false";
+let HANDLER = "true";
 
 
   //------------------------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ module.exports = {
   //------------------------------------------------------------------------------------------------
   FOOTER:   process.env.FOOTER                                  ||  "B∆MIREID>>>>>",
   //------------------------------------------------------------------------------------------------
-  THEME:  process.env.THEME                                     ||  "alfa",
+  THEME:  process.env.THEME                                     ||  "Bamireid",
   //------------------------------------------------------------------------------------------------
   FONT_STYLE:  process.env.FONT_STYLE                           || "1" ,
   //------------------------------------------------------------------------------------------------
